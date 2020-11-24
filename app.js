@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 
 //this lets you reference static pages (css)
-//app.use(express.static("public"));
+app.use(express.static("Public"));
 
 
 app.get('/', function(req, res){
